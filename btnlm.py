@@ -75,7 +75,7 @@ def compute_position_at_phi2(params, current_phi2_deg):
     # Lấy kích thước các thanh từ từ điển tham số
     L_AB, L_BC = params['L_AB'], params['L_BC']
     L_BM, L_ME = params['L_BM'], params['L_ME']
-    L_CD, L_AD = params['L_CD'], params['L_CD'] if 'L_CD' in params else params['L_CD']
+    L_CD, L_AD = params['L_CD'], params['L_CD'] 
     L_CD, L_AD = params['L_CD'], params['L_AD']
 
     # Đổi góc phi2 từ độ (deg) sang radian (rad) để đưa vào hàm lượng giác máy tính
@@ -541,7 +541,7 @@ class DynamicMechanismApp(tk.Tk):
             self.txt_res.insert(tk.END, "• Số khớp thấp (p5): 4 (Khớp A, B, C, D)\n")
             self.txt_res.insert(tk.END, "• Số khớp cao (p4): 0\n\n")
             
-            self.txt_res.insert(tk.END, "• Bậc tự do (Công thức Chebyshev):\n")
+            self.txt_res.insert(tk.END, "• Bậc tự do :\n")
             self.txt_res.insert(tk.END, "  W = 3*n - 2*p5 - p4\n")
             self.txt_res.insert(tk.END, "  W = 3*3 - 2*4 - 0 = 1\n")
             self.txt_res.insert(tk.END, "  => Cơ cấu có 1 BẬC TỰ DO.\n\n")
